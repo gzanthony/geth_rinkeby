@@ -29,4 +29,4 @@ EXPOSE 30303
 
 WORKDIR /data
 
-ENTRYPOINT geth --ipcpath /root --rinkeby --syncmode ${SYNCMODE} --datadir=/data --rpc --rpcapi ${RPCAPI} --http.vhosts '*' --networkid ${NETWORKID}
+ENTRYPOINT geth --ipcpath /root/geth.ipc --rinkeby --syncmode ${SYNCMODE} --datadir=/data --rpc --rpcapi ${RPCAPI} --http.vhosts '*' --networkid ${NETWORKID}
